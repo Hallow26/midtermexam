@@ -2,37 +2,57 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CalcContainer {
+  border: 3px solid #252525; 
+  border-radius: 15px; 
+  width: 600px;
+  margin: auto;
+  background-color: #b1df8b; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.DispContainer {
+  padding: 10px;
+  border: 2px solid #000; 
+  border-radius: 10px; 
+  height: 60px;
+  background-color: #86c7f0; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Display {
+  font-size: 2em;
+  text-align: right;
+  padding-right: 10px;
+  color: #fff; 
 }
 
-.App-link {
-  color: #61dafb;
+.ButtonsContainer {
+  border: 2px solid #000; 
+  border-radius: 10px; 
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  background-color: #b1df8b; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ButtonsContainer > button {
+  font-size: 1.5em;
+  padding: 15px;
+  background-color: #b1df8b; 
+  border: 1px solid #fff; 
+  color: #fff; 
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 8px; 
+}
+
+.ButtonsContainer > button:hover {
+  background-color: #ff9595; 
+}
+
+.ButtonsContainer > .surname {
+  grid-column: span 4;
+  background-color: #f4ab5c; 
+  color: #fff; 
+  border-radius: 8px; 
 }
